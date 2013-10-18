@@ -137,7 +137,7 @@
             <key>name</key>
             <string>c.literal.python</string>
             <key>begin</key>
-            <string>[a-zA-Z0-9]+.(cdef|verify)\((""")</string>
+            <string>[a-za-z0-9]+.(cdef|verify)\((""")</string>
             <key>end</key>
             <string>((?&lt;=""")(")""|""")\)?</string>
             <key>patterns</key>
@@ -148,6 +148,22 @@
                 </dict>
             </array>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>cryptography.cffi.c.literal.python</string>
+            <key>begin</key>
+            <string>(INCLUDES|TYPES|FUNCTIONS|MACROS) = (""")</string>
+            <key>end</key>
+            <string>(""")$</string>
+            <key>patterns</key>
+            <array>
+                <dict>
+                    <key>include</key>
+                    <string>source.c</string>
+                </dict>
+            </array>
+        </dict>
+
         <dict>
             <key>name</key>
             <string>js.literal.python</string>
