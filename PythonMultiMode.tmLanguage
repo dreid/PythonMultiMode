@@ -137,7 +137,7 @@
             <key>name</key>
             <string>c.literal.python</string>
             <key>begin</key>
-            <string>[a-zA-Z0-9]+.(cdef|verify)\((""")</string>
+            <string>[a-zA-Z0-9]+._?(cdef|verify)\((""")</string>
             <key>end</key>
             <string>((?&lt;=""")(")""|""")\)?</string>
             <key>patterns</key>
