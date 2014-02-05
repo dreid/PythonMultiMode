@@ -152,7 +152,7 @@
             <key>name</key>
             <string>cryptography.cffi.c.literal.python</string>
             <key>begin</key>
-            <string>(INCLUDES|TYPES|FUNCTIONS|MACROS) = (""")</string>
+            <string>(INCLUDES|TYPES|FUNCTIONS|MACROS|CUSTOMIZATIONS) = (""")</string>
             <key>end</key>
             <string>(""")$</string>
             <key>patterns</key>
